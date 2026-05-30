@@ -5,7 +5,7 @@ An elegant, modular Python implementation that solves the **Temple Trap** slidin
 ---
 
 ## 📄 Project Documentation
-The complete formal mathematical formulation, layout constraints, rules, and assignment specifications of the puzzle can be viewed directly in the [Docs Folder](docs/details of temple trap.pdf).
+The complete formal mathematical formulation, layout constraints, rules, and assignment specifications of the puzzle can be viewed directly in the [Docs Folder](./docs/details%20of%20 temple%20trap.pdf).
 
 ---
 
@@ -25,8 +25,8 @@ The puzzle is modeled as a $3 \times 3$ grid containing 8 unique sliding tile bl
 
 ### 1. State Space Representation
 The game configuration is tracked dynamically using a dedicated state machine layout:
-* **Board Matrix:** Represented as a flat list of 9 elements mapping the $3 \times 3$ grid in row-major order (`0` to `8`)[cite: 49, 62].
-* **Rotational Constraints:** An array tracking orientation offsets (`0`, `1`, `2`, `3`) corresponding to a clockwise transformation from its base identification mark[cite: 13, 61].
+* **Board Matrix:** Represented as a flat list of 9 elements mapping the $3 \times 3$ grid in row-major order (`0` to `8`).
+* **Rotational Constraints:** An array tracking orientation offsets (`0`, `1`, `2`, `3`) corresponding to a clockwise transformation from its base identification mark.
 * **Pawn State Space:** Tracks both the tile index position (`0` to `8`) and an elevation layer string status (`Ground` or `Top`).
 
 ### 2. Action Space & Connectivity
@@ -39,7 +39,7 @@ To optimize node selection and accelerate path discovery within the $A^*$ search
 
 $$h(n) = |r_{\text{pawn}} - 0| + |c_{\text{pawn}} - 0|$$
 
-This computes the absolute geometric steps required for the pawn to transition from its current grid coordinate $(r, c)$ straight to the target escape exit cell at index `0`[cite: 57, 77]. By combining this heuristic estimate with the true accumulated step cost $g(n)$, the solver evaluates the ideal path profile using $f(n) = g(n) + h(n)$.
+This computes the absolute geometric steps required for the pawn to transition from its current grid coordinate $(r, c)$ straight to the target escape exit cell at index `0`. By combining this heuristic estimate with the true accumulated step cost $g(n)$, the solver evaluates the ideal path profile using $f(n) = g(n) + h(n)$.
 
 ---
 
