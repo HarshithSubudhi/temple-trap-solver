@@ -5,7 +5,7 @@ An elegant, modular Python implementation that solves the **Temple Trap** slidin
 ---
 
 ## 📄 Project Documentation
-The complete formal mathematical formulation, layout constraints, rules, and assignment specifications of the puzzle can be viewed directly in the [Docs Folder](./docs/details%20of%20 temple%20trap.pdf).
+The complete formal mathematical formulation, layout constraints, rules, and assignment specifications of the puzzle can be viewed directly in the [Docs Folder](https://github.com/HarshithSubudhi/temple-trap-solver/blob/main/docs/details%20of%20temple%20trap.pdf).
 
 ---
 
